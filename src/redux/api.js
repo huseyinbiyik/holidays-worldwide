@@ -1,2 +1,4 @@
-//For holidays
-export default apiRoot = 'https://date.nager.at/api/v3';
+// For holidays
+const apiRoot = 'https://date.nager.at/api/v3';
+
+export default apiRoot;
