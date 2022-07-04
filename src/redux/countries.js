@@ -7,8 +7,8 @@ export const displayCountries = (data) => ({
   data,
 });
 
-export const fetchMissions = () => (dispatch) => {
-  fetch(`${apiRoot}/AvailableCountries`)
+export const fetchCountries = () => (dispatch) => {
+  fetch(`${apiRoot}AvailableCountries`)
     .then((response) => response.json())
     .then((json) => dispatch(displayCountries(json)));
 };
