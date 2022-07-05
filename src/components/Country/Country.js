@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { fetchCountryDetails } from '../../redux/country';
 
 export default function Country() {
@@ -13,25 +13,21 @@ export default function Country() {
   }, []);
   const navigate = useNavigate();
 
-  const params = useParams();
-
-  console.log(params);
-
   return (
     <div>
       <button type="submit" onClick={() => navigate(-1)}>Back</button>
       {
       countryDetails.map((card) => (
-        <div key={card.key}>
-          <p key={card.key}>
+        <div key={card.localName}>
+          <p>
             Date:
             {card.date}
           </p>
-          <p key={card.key}>
+          <p>
             Name:
             {card.name}
           </p>
-          <p key={card.key}>
+          <p>
             Local Name:
             {card.localName}
           </p>
