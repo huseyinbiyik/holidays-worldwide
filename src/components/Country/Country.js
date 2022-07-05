@@ -7,11 +7,11 @@ export default function Country() {
   const countryDetails = useSelector((state) => state.country_details);
   const dispatch = useDispatch();
   console.log(countryDetails);
-  useEffect(() => {
-    dispatch(fetchCountryDetails());
-  }, []);
   const location = useLocation();
   const { id } = location.state;
+  useEffect(() => {
+    dispatch(fetchCountryDetails(id));
+  }, []);
 
   console.log(id);
 

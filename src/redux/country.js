@@ -7,8 +7,10 @@ export const displayCountryDetails = (data) => ({
   data,
 });
 
-export const fetchCountryDetails = () => (dispatch) => {
-  fetch(`${apiRoot}AvailableCountries`)
+const currentYear = new Date().getFullYear();
+
+export const fetchCountryDetails = (id) => (dispatch) => {
+  fetch(`${apiRoot}PublicHolidays/${currentYear}/${id}`)
     .then((response) => response.json())
     .then((json) => dispatch(displayCountryDetails(json)));
 };
