@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { fetchCountryDetails } from '../../redux/country';
 
 export default function Country() {
@@ -12,11 +12,13 @@ export default function Country() {
   useEffect(() => {
     dispatch(fetchCountryDetails(id));
   }, []);
+  const navigate = useNavigate();
 
   console.log(id);
 
   return (
     <div>
+      <button type="submit" onClick={() => navigate(-1)}>Back</button>
       {
       countryDetails.map((card) => (
         <div key={card.key}>
