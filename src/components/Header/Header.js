@@ -18,6 +18,7 @@ export default function Header() {
         <div className="data">
           <p>
             {countries.length}
+            {' '}
             countries
           </p>
         </div>

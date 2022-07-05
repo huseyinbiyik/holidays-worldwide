@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Countries from './components/Countries/Countries';
+import Country from './components/Country/Country';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Countries />} />
+        <Route path="/Country" element={<Country />} />
       </Routes>
     </BrowserRouter>
   );

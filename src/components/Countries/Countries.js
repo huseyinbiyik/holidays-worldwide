@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { fetchCountries } from '../../redux/countries';
 
 export default function Countries() {
@@ -17,6 +18,7 @@ export default function Countries() {
         <div key={card.countryCode}>
           <p>{card.countryCode}</p>
           <h2>{card.name}</h2>
+          <Link to="/country" state={{ id: `${card.countryCode}` }}>gogoggo</Link>
         </div>
       ))
     }
