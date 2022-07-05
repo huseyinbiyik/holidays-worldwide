@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchCountries } from '../../redux/countries';
+import headerphoto from './assets/headerphoto.png';
 
 export default function Countries() {
   const countries = useSelector((state) => state.countries);
@@ -15,6 +16,18 @@ export default function Countries() {
 
   return (
     <div>
+      <div className="headline">
+        <div className="image-container">
+          <img className="headerPhoto" src={headerphoto} alt="world" />
+        </div>
+        <div className="data">
+          <p>
+            {countries.length}
+            {' '}
+            countries
+          </p>
+        </div>
+      </div>
       <input placeholder="Country" onChange={(event) => setQuery(event.target.value)} />
       { countries.filter((country) => {
         if (query === '') {

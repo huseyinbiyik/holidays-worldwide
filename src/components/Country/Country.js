@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { fetchCountryDetails } from '../../redux/country';
+import headerphoto from './assets/headerphoto.png';
 
 export default function Country() {
   const countryDetails = useSelector((state) => state.country_details);
@@ -15,6 +16,19 @@ export default function Country() {
 
   return (
     <div>
+      <div className="headline">
+        <div className="image-container">
+          <img className="headerPhoto" src={headerphoto} alt="world" />
+        </div>
+        <div className="data">
+          <p>
+            {countryDetails.length}
+            {' '}
+            countries
+          </p>
+        </div>
+      </div>
+
       <button type="submit" onClick={() => navigate(-1)}>Back</button>
       {
       countryDetails.map((card) => (
