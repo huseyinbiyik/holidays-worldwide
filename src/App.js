@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Countries />} />
-        <Route path="/Country" element={<Country />} />
+        <Route path="country/:id" element={<Country />} />
       </Routes>
     </BrowserRouter>
   );
