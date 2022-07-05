@@ -17,7 +17,25 @@ export default function Country() {
 
   return (
     <div>
-      {id}
+      {
+      countryDetails.map((card) => (
+        <div key={card.key}>
+          <p key={card.key}>
+            Date:
+            {card.date}
+          </p>
+          <p key={card.key}>
+            Name:
+            {card.name}
+          </p>
+          <p key={card.key}>
+            Local Name:
+            {card.localName}
+          </p>
+          <hr />
+        </div>
+      ))
+    }
     </div>
   );
 }
