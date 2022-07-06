@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, useLocation } from 'react-router-dom';
@@ -17,12 +18,13 @@ export default function Country() {
 
   return (
     <div>
+      {/* headline for the country detail page */}
       <div className="headline">
         <div className="imageContainer">
           <img className="headlinePhoto" src={headerphoto} alt="world" />
         </div>
         <div className="dataContainer">
-          <p className="headlineDataNumber">
+          <div className="headlineDataNumber">
             <h2>
               {country}
             </h2>
@@ -35,25 +37,36 @@ export default function Country() {
               holidays in
               a year
             </span>
-          </p>
+          </div>
         </div>
       </div>
+      {/* headline for the country detail page */}
+      <h3 className="holidayBreakdownTitle">
+        Holidays in a year for
+        {' '}
+        <span>
+          {' '}
+          {country}
+        </span>
+      </h3>
       {
       countryDetails.map((card) => (
-        <div key={card.localName}>
-          <p>
-            Date:
-            {card.date}
-          </p>
-          <p>
-            Name:
-            {card.name}
-          </p>
-          <p>
-            Local Name:
-            {card.localName}
-          </p>
-          <hr />
+        <div key={uuidv4()} className="holidayBreakdownContainer">
+          <div key={uuidv4()} className="holidayBreakdown">
+            <p>{card.name}</p>
+            <p>
+              Date:
+              {' '}
+              {card.date}
+            </p>
+            <p>
+              {' '}
+              Local Name:
+              {' '}
+              {card.localName}
+            </p>
+
+          </div>
         </div>
       ))
     }

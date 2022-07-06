@@ -55,7 +55,7 @@ export default function Countries() {
           return true;
         } return false;
       }).map((card) => (
-        <div className="countryCard" key={card.countryCode}>
+        <div className="countryCard" key={card.name}>
           <Link className="cardLinkContainer" to={`/country/${card.countryCode}`} state={{ country: `${card.name}` }}>
             {' '}
             <p className="arrowForward">➔</p>
