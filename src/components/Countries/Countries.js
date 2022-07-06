@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchCountries } from '../../redux/countries';
 import headerphoto from './assets/headerphoto.png';
+import './Countries.css';
 
 export default function Countries() {
   const countries = useSelector((state) => state.countries);
@@ -17,14 +18,19 @@ export default function Countries() {
   return (
     <div>
       <div className="headline">
-        <div className="image-container">
-          <img className="headerPhoto" src={headerphoto} alt="world" />
+        <div className="imageContainer">
+          <img className="headlinePhoto" src={headerphoto} alt="world" />
         </div>
-        <div className="data">
-          <p>
+        <div className="dataContainer">
+          <p className="headlineDataNumber">
             {countries.length}
             {' '}
-            countries
+
+            {' '}
+            <br />
+            <span className="headlineDataText">
+              countries in total
+            </span>
           </p>
         </div>
       </div>

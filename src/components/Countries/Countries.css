@@ -1,0 +1,36 @@
+.headline {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #5586e1;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 5%;
+}
+
+.imageContainer {
+  width: 50%;
+  text-align: right;
+}
+
+.headlinePhoto {
+  width: 75%;
+}
+
+.dataContainer {
+  width: 50%;
+}
+
+.headlineDataNumber {
+  color: #f0f5fe;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.headlineDataText {
+  font-size: 18px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
