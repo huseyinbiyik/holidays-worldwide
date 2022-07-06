@@ -2,7 +2,19 @@ header {
   text-align: center;
 }
 
+.goBackButton {
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: fixed;
+  top: 10;
+  left: 10px;
+
+}
+
 .headerTitle {
   font-weight: 300;
   color: #f0f5fe;
+
 }

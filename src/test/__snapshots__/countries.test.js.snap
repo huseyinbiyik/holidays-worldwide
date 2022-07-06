@@ -10,26 +10,47 @@ Object {
           class="headline"
         >
           <div
-            class="image-container"
+            class="imageContainer"
           >
             <img
               alt="world"
-              class="headerPhoto"
+              class="headlinePhoto"
               src="headerphoto.png"
             />
           </div>
           <div
-            class="data"
+            class="dataContainer"
           >
-            <p>
+            <p
+              class="headlineDataNumber"
+            >
               0
                
-              countries
+               
+              <br />
+              <span
+                class="headlineDataText"
+              >
+                countries in total
+              </span>
             </p>
           </div>
         </div>
-        <input
-          placeholder="Country"
+        <div
+          class="searchContainer"
+        >
+          <p
+            class="searchTitle"
+          >
+            Search For the Country
+          </p>
+          <input
+            class="searchInputArea"
+            placeholder="e.g. Germany"
+          />
+        </div>
+        <div
+          class="cardContainer"
         />
       </div>
     </div>
@@ -40,26 +61,47 @@ Object {
         class="headline"
       >
         <div
-          class="image-container"
+          class="imageContainer"
         >
           <img
             alt="world"
-            class="headerPhoto"
+            class="headlinePhoto"
             src="headerphoto.png"
           />
         </div>
         <div
-          class="data"
+          class="dataContainer"
         >
-          <p>
+          <p
+            class="headlineDataNumber"
+          >
             0
              
-            countries
+             
+            <br />
+            <span
+              class="headlineDataText"
+            >
+              countries in total
+            </span>
           </p>
         </div>
       </div>
-      <input
-        placeholder="Country"
+      <div
+        class="searchContainer"
+      >
+        <p
+          class="searchTitle"
+        >
+          Search For the Country
+        </p>
+        <input
+          class="searchInputArea"
+          placeholder="e.g. Germany"
+        />
+      </div>
+      <div
+        class="cardContainer"
       />
     </div>
   </div>,
