@@ -62,3 +62,75 @@
 }
 
 /* Search Area */
+
+/* card mapping, listing countries  */
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 900px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.countryCard {
+  aspect-ratio: 1 / 1;
+  background-color: #4167af;
+}
+
+.countryCard:nth-child(even) {
+  background-color: #3e61a4;
+}
+
+.cardLinkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px;
+  justify-content: space-between;
+  height: 100%;
+  text-decoration: none;
+}
+
+.cardLinkContainer:hover {
+  box-shadow: 0 0 282px 10px rgba(0, 0, 0, 0.33) inset;
+  -webkit-box-shadow: 0 0 282px 10px rgba(0, 0, 0, 0.33) inset;
+  -moz-box-shadow: 0 0 282px 10px rgba(0, 0, 0, 0.33) inset;
+}
+
+.arrowForward {
+  color: #f0f5fe;
+  font-size: 16px;
+  border: 2px solid #f0f5fe;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.cardCountryCode {
+  font-size: 10vw;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  color: #2d4573;
+}
+
+.cardCountryName {
+  margin: 0;
+  padding: 0;
+  color: #f0f5fe;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.holidayCounter {
+  margin: 0;
+  padding: 0;
+  color: #f0f5fe;
+  font-size: 15px;
+  text-align: right;
+}
+
+/* card mapping, listing countries  */

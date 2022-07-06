@@ -39,11 +39,14 @@ export default function Countries() {
       {/* search area */}
       <div className="searchContainer">
         <p className="searchTitle">Search For the Country</p>
-        <input className="searchInputArea" placeholder="Country" onChange={(event) => setQuery(event.target.value)} />
+        <input className="searchInputArea" placeholder="e.g. Germany" onChange={(event) => setQuery(event.target.value)} />
       </div>
       {/* search area */}
 
-      { countries.filter((country) => {
+      {/* card mapping, listing countries  */}
+      <div className="cardContainer">
+        {
+      countries.filter((country) => {
         if (query === '') {
           // if query is empty
           return true;
@@ -52,15 +55,22 @@ export default function Countries() {
           return true;
         } return false;
       }).map((card) => (
-        <div key={card.countryCode}>
-          <Link to={`/country/${card.countryCode}`}>
+        <div className="countryCard" key={card.countryCode}>
+          <Link className="cardLinkContainer" to={`/country/${card.countryCode}`}>
             {' '}
-            <p>{card.countryCode}</p>
-            <h2>{card.name}</h2>
-
+            <p className="arrowForward">➔</p>
+            <p className="cardCountryCode">{card.countryCode}</p>
+            <div className="cardNameContainer">
+              <h2 className="cardCountryName">{card.name}</h2>
+              <p className="holidayCounter">4+ holidays in a year</p>
+            </div>
           </Link>
         </div>
-      ))}
+      ))
+}
+      </div>
+      {/* card mapping, listing countries */}
+
     </div>
   );
 }
