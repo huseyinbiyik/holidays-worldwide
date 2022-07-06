@@ -5,8 +5,7 @@ export default function Header() {
   return (
 
     <header>
-      <h1> Holidays Worldwide</h1>
-
+      <h1 className="headerTitle"> Holidays Worldwide</h1>
     </header>
   );
 }

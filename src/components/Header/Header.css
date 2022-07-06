@@ -1,8 +1,8 @@
 header {
-  background-color: aqua;
+  text-align: center;
 }
 
-.headerPhoto {
-  width: 200px;
-  height: auto;
+.headerTitle {
+  font-weight: 300;
+  color: #f0f5fe;
 }
