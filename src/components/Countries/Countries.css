@@ -34,3 +34,31 @@
   text-transform: lowercase;
   font-weight: 300;
 }
+
+/* Search Area */
+.searchContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #35548b;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.searchTitle {
+  color: #f0f5fe;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.searchInputArea {
+  width: 50%;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+/* Search Area */

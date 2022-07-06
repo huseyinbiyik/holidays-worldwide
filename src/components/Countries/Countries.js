@@ -17,6 +17,7 @@ export default function Countries() {
 
   return (
     <div>
+
       <div className="headline">
         <div className="imageContainer">
           <img className="headlinePhoto" src={headerphoto} alt="world" />
@@ -34,7 +35,14 @@ export default function Countries() {
           </p>
         </div>
       </div>
-      <input placeholder="Country" onChange={(event) => setQuery(event.target.value)} />
+
+      {/* search area */}
+      <div className="searchContainer">
+        <p className="searchTitle">Search For the Country</p>
+        <input className="searchInputArea" placeholder="Country" onChange={(event) => setQuery(event.target.value)} />
+      </div>
+      {/* search area */}
+
       { countries.filter((country) => {
         if (query === '') {
           // if query is empty
