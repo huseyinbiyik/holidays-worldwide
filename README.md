@@ -15,7 +15,7 @@
 
 ## Project Presentation
 
-[Watch My Presentation on This Project](https://www.loom.com/share/5f82f0cc818c442fbe34252e80e9a179)🚀🚀 
+[Watch My Presentation on This Project](https://www.loom.com/share/5f82f0cc818c442fbe34252e80e9a179)
 
 ## Getting Started
 
