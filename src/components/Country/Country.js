@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { fetchCountryDetails } from '../../redux/country';
 import headerphoto from './assets/headerphoto.png';
 
 export default function Country() {
   const countryDetails = useSelector((state) => state.country_details);
   const dispatch = useDispatch();
-  const location = useLocation();
-  const { id } = location.state;
+  const { id } = useParams();
   useEffect(() => {
     dispatch(fetchCountryDetails(id));
   }, []);
@@ -28,7 +27,6 @@ export default function Country() {
           </p>
         </div>
       </div>
-
       <button type="submit" onClick={() => navigate(-1)}>Back</button>
       {
       countryDetails.map((card) => (

@@ -39,8 +39,7 @@ export default function Countries() {
         } return false;
       }).map((card) => (
         <div key={card.countryCode}>
-
-          <Link to={`/country/${card.countryCode}`} state={{ id: `${card.countryCode}` }}>
+          <Link to={`/country/${card.countryCode}`}>
             {' '}
             <p>{card.countryCode}</p>
             <h2>{card.name}</h2>
