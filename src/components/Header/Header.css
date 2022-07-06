@@ -1,8 +1,17 @@
 header {
-  background-color: aqua;
+  text-align: center;
 }
 
-.headerPhoto {
-  width: 200px;
-  height: auto;
+.goBackButton {
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: fixed;
+  left: 10px;
+}
+
+.headerTitle {
+  font-weight: 300;
+  color: #f0f5fe;
 }
