@@ -1,0 +1,17 @@
+.holidayBreakdownTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.holidayBreakdownContainer:nth-child(odd) {
+  background-color: #3e61a4;
+}
+
+.holidayBreakdown {
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  padding: 25px 0;
+}
