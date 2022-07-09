@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Countries />} />
-        <Route path="country/:id" element={<Country />} />
+        <Route path="/holidays-worldwide" element={<Countries />} />
+        <Route path="/holidays-worldwide/country/:id" element={<Country />} />
       </Routes>
     </BrowserRouter>
   );
