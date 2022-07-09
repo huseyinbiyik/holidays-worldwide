@@ -13,7 +13,7 @@
 
 [Live Version on Github Pages](https://huseyinbiyik.github.io/holidays-worldwide/) <br>
 [Live Version on Heroku](https://holidays-worldwide.herokuapp.com/) <br>
-[Live Version on Netlify](https://holidays-110countries.netlify.app/)
+[Live Version on Netlify](https://holidays-worldwide-app.netlify.app/)
 
 
 ## Project Presentation
