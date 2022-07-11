@@ -11,10 +11,7 @@
 
 ## Live Demo
 
-[Live Version on Github Pages](https://huseyinbiyik.github.io/holidays-worldwide/) <br>
-[Live Version on Heroku](https://holidays-worldwide.herokuapp.com/) <br>
-[Live Version on Netlify](https://holidays-worldwide-app.netlify.app/)
-
+[Live Version](https://huseyinbiyik.github.io/holidays-worldwide/) <br>
 
 ## Project Presentation
 
