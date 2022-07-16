@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import CountUp from 'react-countup';
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, useLocation } from 'react-router-dom';
@@ -28,7 +29,8 @@ export default function Country() {
             <h2>
               {country}
             </h2>
-            {countryDetails.length}
+            <CountUp end={countryDetails.length} duration={1} />
+
             {' '}
 
             {' '}

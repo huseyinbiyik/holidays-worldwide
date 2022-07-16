@@ -5,7 +5,7 @@
   background-color: #5586e1;
   padding-top: 5%;
   padding-bottom: 5%;
-  gap: 5%;
+  gap: 15%;
 }
 
 .imageContainer {
@@ -14,7 +14,7 @@
 }
 
 .headlinePhoto {
-  width: 75%;
+  width: 90%;
 }
 
 .dataContainer {
@@ -23,7 +23,7 @@
 
 .headlineDataNumber {
   color: #f0f5fe;
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 18px;
