@@ -1,3 +1,4 @@
+import CountUp from 'react-countup';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -24,7 +25,8 @@ export default function Countries() {
         </div>
         <div className="dataContainer">
           <p className="headlineDataNumber">
-            {countries.length}
+            <CountUp end={countries.length} duration={1} />
+
             {' '}
 
             {' '}
