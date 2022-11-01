@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/holidays-worldwide/static/css/main.9d94c2d0.css",
-    "main.js": "/holidays-worldwide/static/js/main.c4b8f424.js",
+    "main.js": "/holidays-worldwide/static/js/main.fe75f874.js",
     "static/media/headerphoto.png": "/holidays-worldwide/static/media/headerphoto.21f7ddf692e77d0d75c7.png",
     "index.html": "/holidays-worldwide/index.html",
     "main.9d94c2d0.css.map": "/holidays-worldwide/static/css/main.9d94c2d0.css.map",
-    "main.c4b8f424.js.map": "/holidays-worldwide/static/js/main.c4b8f424.js.map"
+    "main.fe75f874.js.map": "/holidays-worldwide/static/js/main.fe75f874.js.map"
   },
   "entrypoints": [
     "static/css/main.9d94c2d0.css",
-    "static/js/main.c4b8f424.js"
+    "static/js/main.fe75f874.js"
   ]
 }
